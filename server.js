@@ -31,6 +31,8 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+// app.use(express.cookieParser('secret'));
+// app.use(express.cookieSession());
 
 app.get('/', (req, res) => {
   res.render('index', {
