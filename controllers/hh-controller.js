@@ -5,6 +5,7 @@ const hhController = {};
 hhController.index = (req, res) => {
   Hh.findAll()
     .then(hh => {
+      //console.log(hh)
       res.render('index', {
         hh: hh,
         // auth: (req.user) ? true : false,
@@ -29,13 +30,16 @@ hhController.show = (req, res) => {
 };
 
 hhController.create = (req, res) => {
+  // console.log(req.body);
   Hh.create({
-    title: req.body.title,
-    description: req.body.description,
-    category: req.body.category,
-    status: req.body.status,
-  }, req.user.id).then(hh => {
-    res.redirect(`/hh/${hh.id}`);
+    name: req.body.name,
+    hours: req.body.hours,
+    img: req.body.img,
+    location: req.body.location,
+    specials: req.body.specials
+
+  }).then(hh => {
+    res.redirect('/');
   }).catch(err => {
     console.log(err);
     res.status(500).json(err);

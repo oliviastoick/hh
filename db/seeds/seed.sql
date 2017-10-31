@@ -2,13 +2,7 @@
 INSERT INTO happyHourVendors(name,hours,img, location, specials)
 VALUES ('Hair of the Dog','11:30-4:30', 'http://www.privatepartyroom.com/images/bars/pIgrw.jpg', '168 Orchard Street (corner of Stanton)
 New York, NY 10002', 'Monday- HAPPY HOUR 11:30am-8:00pm
-WHOLE BAR ½ PRICE
-
-$ 1/2 PRICE DRAFTS & $ 4 SHOTS
-8:00pm-4:00am
-
-Tuesdays - HAPPY HOUR 11:30am-8:00pm
-WHOLE BAR ½ PRICE
+WHOLE BAR ½ PRICE $ 1/2 PRICE DRAFTS & $ 4 SHOTS 8:00pm-4:00am Tuesdays - HAPPY HOUR 11:30am-8:00pm WHOLE BAR ½ PRICE
 
 $4 "YOU CALL IT"
 8:00pm-4:00am

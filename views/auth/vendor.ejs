@@ -1,14 +1,12 @@
 <% include ../partials/boilerplate %>
 
 <div class="addVendor">
-  <form method="POST" action="/auth/vendor">
-    <input type="text" name="username" placeholder="Username" />
-    <input type="password" name="password" placeholder="Password" />
-    <input type="email" name="email" placeholder="Email" />
+  <form method="POST" action="/">
+    <input type="text" name="name" placeholder="Venue Name" />
+    <input type="text" name="hours" placeholder="Hours of Opperations" />
+    <input type="text" name="img" placeholder="Img URL" />
     <input type="text" name="location" placeholder="Address" />
-    <input type="text" name="hhHours" placeholder="Happy Hour Hours" />
-    //add img url
-    //connect menue
+    <input type="text" name="specials" placeholder="Happy Hour Deals/Details" />
     <input type="submit" value="add" />
   </form>
 </div>
