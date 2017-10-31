@@ -1,0 +1,22 @@
+<% include ../partials/boilerplate %>
+
+<div class="hh-container">
+<% hh.forEach(hh => { %>
+<div class="hh">
+  <h3><%= hh.title %></h3>
+  <div class="meta">
+    <div class="category">
+      <p><%= hh.category %></p>
+    </div>
+      <div class="completion" data-hhid="<%= hh.id %>">
+        <p><%= (hh.completion) ? 'Done' : 'Happy Hour' %></p>
+      </div>
+    <div class="edit">
+      <a href="/hh/<%= hh.id %>">Details</a>
+    </div>
+  </div>
+</div>
+<% }) %>
+</div>
+
+<% include ../partials/end %>

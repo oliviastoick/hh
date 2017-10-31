@@ -1,0 +1,18 @@
+
+// edit to fit my hh
+<% include ../partials/boilerplate %>
+  <div class="hh">
+    <h3><%= hh.title %></h3>
+    <p><%= hh.description %></p>
+    <div class="meta">
+      <span class="category"><%= hh.category %></span>
+      <span class="completion"><%= (hh.completion) ? 'Done' : 'Happy Hours' %></span>
+    </div>
+    <div class="links">
+      <a href="/hh/<%=hh.id%>/edit">Edit</a>
+      <form method="POST" action="/hh/<%=hh.id%>?_method=DELETE">
+        <input type="submit" value="Delete" />
+      </form>
+    </div>
+  </div>
+<% include ../partials/end %>
