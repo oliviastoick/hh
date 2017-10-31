@@ -1,5 +1,6 @@
-
-INSERT INTO happyHourVendors(id,name,hours,img, location, specials) VALUES (1,'Hair of the Dog','11:30-4:30', 'http://www.privatepartyroom.com/images/bars/pIgrw.jpg', '168 Orchard Street (corner of Stanton)
+\c happy_hour_vendors
+INSERT INTO happyHourVendors(name,hours,img, location, specials)
+VALUES ('Hair of the Dog','11:30-4:30', 'http://www.privatepartyroom.com/images/bars/pIgrw.jpg', '168 Orchard Street (corner of Stanton)
 New York, NY 10002', 'Monday- HAPPY HOUR 11:30am-8:00pm
 WHOLE BAR ½ PRICE
 
@@ -33,10 +34,9 @@ SUNDAY NOON to CLOSE ALL BEER ½ PRICE
 ½ PRICE BLOODY MARY’S,
 ½ PRICE MIMOSAS &
 BYOC "Bring your own Coffee"- ½ PRICE COFFEE SPIKES UNTIL 3pm
-');
+'),
 
-INSERT INTO happyHourVendors(id,name,hours,img, location, specials) VALUES (2, 'The 13th Step', '11:30-4am', 'http://www.nycbestbar.com/images/mainPhoto-13thstep.jpg', '149 2nd Avenue
-(Between 9th & 10th Street)
+('The 13th Step', '11:30-4am', 'http://www.nycbestbar.com/images/mainPhoto-13thstep.jpg', '149 2nd Avenue
 New York, NY 10003', '
 HAPPY HOUR
 MONDAY-FRIDAY 

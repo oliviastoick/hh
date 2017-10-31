@@ -5,9 +5,9 @@ const hhController = {};
 hhController.index = (req, res) => {
   Hh.findAll()
     .then(hh => {
-      res.render('hh/hh-index', {
+      res.render('index', {
         hh: hh,
-        auth: (req.user) ? true : false,
+        // auth: (req.user) ? true : false,
       });
     }).catch(err => {
       console.log(err);

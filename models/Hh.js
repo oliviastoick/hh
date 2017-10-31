@@ -4,7 +4,7 @@ const db = require('../db/config');
 const Hh = {};
 
 Hh.findAll = () => {
-  return db.manyOrNone('SELECT * FROM hh ORDER BY id ASC');
+  return db.query('SELECT * FROM hh ORDER BY id ASC');
 };
 
 Hh.findById = (id) => {

@@ -4,7 +4,7 @@ const hhRouter = express.Router();
 const hhController = require('../controllers/hh-controller');
 const authHelpers = require('../services/auth-helpers');
 
-hhRouter.get('/', hhController.index);
+hhRouter.get('/index', hhController.index);
 
 hhRouter.get('/new', authHelpers.loginRequired, (req, res) => {
   res.render('hh/hh-new', {
