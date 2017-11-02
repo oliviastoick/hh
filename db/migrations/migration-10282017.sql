@@ -18,6 +18,6 @@ CREATE TABLE IF NOT EXISTS users(
     name VARCHAR
 );
 
-ALTER TABLE favoriterecipes
+ALTER TABLE users
 ADD COLUMN user_id INTEGER REFERENCES users(id);
 
