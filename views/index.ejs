@@ -1,27 +1,25 @@
 
 <% include ./partials/boilerplate %>
-
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 <h1>Appy Hour</h1>
 <div class="hh-container">
 <% hh.forEach(hh => { %>
     <div class="hh">
       <h3><%= hh.name %></h3>
-      <div class="meta">
+    <div class="meta">
         <div class="category">
-          <p><%= hh.hours %></p>
-          <p><%= hh.img %></p>
-          <p><%= hh.location %></p>
-          <p><%= hh.specials %></p>
+            <p><%= hh.hours %></p>
+            <p><%= hh.location %></p>
+        <div class="edit">
+           <a href="/<%= hh.id %>">Details</a>
+        </div>
+          <!-- <p><%= hh.specials %></p> -->
           <img src= "<%= hh.img %>"/>
         </div>
-          <div class="completion" data-hhid="<%= hh.id %>">
-            <p><%= (hh.completion) ? 'Done' : 'Happy Hour' %></p>
-          </div>
-        <div class="edit">
-          <!-- <a href="/hh/<%= hh.id %>">Details</a>  //// add details about venue-->
         </div>
-      </div>
-    </div>
+        </div>
+
 <% }) %>
 </div>
 

@@ -3,13 +3,16 @@
 <div class="hh-container">
 <% hh.forEach(hh => { %>
 <div class="hh">
-  <h3><%= hh.title %></h3>
+  <h3><%= hh.name %></h3>
   <div class="meta">
-    <div class="category">
-      <p><%= hh.category %></p>
+    <div class="hours">
+      <p><%= hh.hours %></p>
+        <div class="location">
+      <h3><%= hh.location %></h3>
+
+
+      <img src="<%= hh.img %>"/>
     </div>
-      <div class="completion" data-hhid="<%= hh.id %>">
-        <p><%= (hh.completion) ? 'Done' : 'Happy Hour' %></p>
       </div>
     <div class="edit">
       <a href="/hh/<%= hh.id %>">Details</a>
@@ -17,6 +20,7 @@
   </div>
 </div>
 <% }) %>
-</div>
+
+
 
 <% include ../partials/end %>

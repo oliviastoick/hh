@@ -24,7 +24,7 @@ authRouter.post('/register', usersController.create);
 
 authRouter.get('/logout', (req, res) => {
   req.logout();
-  res.redirect('back');
+  res.redirect('/');
 });
 
 module.exports = authRouter;

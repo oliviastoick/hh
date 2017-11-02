@@ -35,13 +35,13 @@ app.use(passport.session());
 // app.use(express.cookieSession());
 
 // app.get('/', (req, res) => {
-//   res.render('index', {
-//     auth: (req.user) ? true : false,
+// res.render('index', {
+//   auth: (req.user) ? true : false,
 //   });
-// });
+//  });
 
-// const authRoutes = require('./routes/auth-routes');
-// app.use('/auth', authRoutes);
+const authRoutes = require('./routes/auth-routes');
+app.use('/auth', authRoutes);
 const userRoutes = require('./routes/user-routes');
 app.use('/user', userRoutes);
 

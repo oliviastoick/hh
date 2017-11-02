@@ -2,18 +2,13 @@
 
 <div class="edit">
   <form method="POST" action="/hh/<%= hh.id %>?_method=PUT">
-    <input type="text" name="title" value="<%= hh.title %>" />
-    <input type="text" name="description" value="<%= hh.description %>" />
-    <input type="text" name="category" value="<%= hh.category %>" />
+    <input type="text" name="name" value="<%= hh.name %>" />
+    <input type="text" name="hours" value="<%= hh.hours %>" />
+    <input type="text" name="location" value="<%= hh.location %>" />
+    <input type="text" name="specials" value="<%= hh.specials %>" />
     <div class="radio">
-      <input type="radio" name="completion" value="TRUE" <%= (hh.completion) ? 'checked' : '' %> />
-      <label>Complete</label>
     </div>
-    <div class="radio">
-      <input type="radio" name="completion" value="FALSE" <%= (hh.completion) ? '' : 'checked' %> />
-      <label>Incomplete</label>
-    </div>
-    <input type="submit" value="Add New Todo" />
+    <input type="submit" value="Edit Venue" />
   </form>
 </div>
 

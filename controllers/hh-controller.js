@@ -61,10 +61,10 @@ hhController.edit = (req, res) => {
 
 hhController.update = (req, res) => {
   Hh.update({
-    title: req.body.title,
-    description: req.body.description,
-    category: req.body.category,
-    completion: req.body.completion,
+    name: req.body.name,
+    hours: req.body.hours,
+    location: req.body.location,
+    specials: req.body.specials
   }, req.params.id).then(hh => {
     res.redirect(`/hh/${hh.id}`);
   }).catch(err => {

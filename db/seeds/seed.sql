@@ -1,39 +1,12 @@
 \c happy_hour_vendors
 INSERT INTO happyHourVendors(name,hours,img, location, specials)
-VALUES ('Hair of the Dog','11:30-4:30', 'http://www.privatepartyroom.com/images/bars/pIgrw.jpg', '168 Orchard Street (corner of Stanton)
-New York, NY 10002', 'Monday- HAPPY HOUR 11:30am-8:00pm
-WHOLE BAR ½ PRICE $ 1/2 PRICE DRAFTS & $ 4 SHOTS 8:00pm-4:00am Tuesdays - HAPPY HOUR 11:30am-8:00pm WHOLE BAR ½ PRICE
-
-$4 "YOU CALL IT"
-8:00pm-4:00am
-
-Wednesday - HAPPY HOUR 11:30am-8:00pm
-WHOLE BAR ½ PRICE
-
-$ 2 CANS & $ 8 DOMESTIC PITCHERS
-$ 4 SHOTS OF FLAVORED VODKA & FIREBALL
-8:00pm-4:00am
-
-Thursday - HAPPY HOUR 11:30am-8:00pm
-WHOLE BAR ½ PRICE
-
-$15 BUCKETS OF BEER & $5 bombs
-8:00pm-4:00am
-
-Friday-HAPPY HOUR 11:30am-8:00pm WHOLE BAR ½ PRICE
-
-Saturday-SATURDAY 11:30am-8pm - ½ PRICE BEER, BLOODIES, MIMOSAS & COFFEE SPIKES
-
-SUNDAY NOON to CLOSE ALL BEER ½ PRICE
-½ PRICE BLOODY MARY’S,
-½ PRICE MIMOSAS &
-BYOC "Bring your own Coffee"- ½ PRICE COFFEE SPIKES UNTIL 3pm
+VALUES ('Hair of the Dog','11:30-4:30', 'http://www.privatepartyroom.com/images/bars/pIgrw.jpg', '168 Orchard Street (corner of Stanton) New York, NY 10002', 'HAPPY HOUR 11:30am-8:00pm Mondays-Fridays whole bar ½ price. Monday - $ 4 SHOTS 8:00pm-4:00am. Tuesdays - $4 "YOU CALL IT" 8:00pm-4:00am. Wednesday - $2 cans & $8 domestic pitchers, $4 shots of flavored vodka & Fireball 8:00pm-4:00am. Thursday - $15 buckets of beer & $5 bombs 8:00pm-4:00am. Saturday- 11:30am-8pm - ½ price beer, bloodies, mimosas & coffee spikes. Sunday - noon to close all beer ½ price, ½ price bloodies, ½ price mimosas & BYOC "Bring your own Coffee"- ½ price coffe spikes until 3pm
 '),
 
 ('The 13th Step', '11:30-4am', 'http://www.nycbestbar.com/images/mainPhoto-13thstep.jpg', '149 2nd Avenue
 New York, NY 10003', '
 HAPPY HOUR
-MONDAY-FRIDAY 
+Monday - Friday 
 11:30AM-8:00PM
 WHOLE BAR 1/2 PRICE
 

@@ -1,17 +1,21 @@
 
-// edit to fit my hh
+
 <% include ../partials/boilerplate %>
   <div class="hh">
-    <h3><%= hh.title %></h3>
-    <p><%= hh.description %></p>
+    <h3><%= hh.name %></h3>
+    <p><%= hh.hours %></p>
+    <p><%= hh.location %></p>
+    <p><%= hh.specials %></p>
+<!--     <p><%= hh.img %></p> -->
+      <img src="<%= hh.img %>"/>
     <div class="meta">
-      <span class="category"><%= hh.category %></span>
-      <span class="completion"><%= (hh.completion) ? 'Done' : 'Happy Hours' %></span>
     </div>
     <div class="links">
-      <a href="/hh/<%=hh.id%>/edit">Edit</a>
+      <a href="/<%=hh.id%>/edit">Edit</a>
       <form method="POST" action="/hh/<%=hh.id%>?_method=DELETE">
-        <input type="submit" value="Delete" />
+        <div class="delete">
+            <input type="submit" value="Delete" />
+        </div>
       </form>
     </div>
   </div>

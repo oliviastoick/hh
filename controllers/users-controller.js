@@ -4,10 +4,11 @@ const bcrypt = require('bcryptjs');
 const usersController = {};
 
 usersController.index = (req, res) => {
-  res.json({
-    message: 'User profile here',
-    user: req.user,
-  });
+  // res.json({
+  //   message: 'User profile here',
+  //   user: req.user,
+  // });
+  res.redirect('/');
 };
 
 usersController.create = (req, res, next) => {
@@ -20,7 +21,7 @@ usersController.create = (req, res, next) => {
   }).then(user => {
     req.login(user, (err) => {
       if (err) return next(err);
-      res.redirect('/user');
+      res.redirect('/');
     });
   }).catch(err => {
     console.log(err);

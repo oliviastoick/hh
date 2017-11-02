@@ -31,10 +31,10 @@ Hh.update = (hh, hhId) => {
     hours = $2,
     img = $3,
     location = $4,
-    specials = $5,
+    specials = $5
     WHERE id = $6
     RETURNING *
-  `, [happyhourvendors.name, happyhourvendors.hours, happyhourvendors.img, happyhourvendors.location, happyhourvendors.specials,  userId]);
+  `, [hh.name, hh.hours, hh.img, hh.location, hh.specials,  userId]);
 ;
 };
 
